@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+               https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--使用Spring来创建对象，在Spring这些都成为Bean
+        类型 变量名=new 类型();
+        Hello hello=new Hello();
+
+        id=变量名
+        class=new 的对象
+        property相当于给对象中的属性设置一个值
+    -->
+    <!--下标赋值-->
+    <bean id="user" class="com.zhang.pojo.User">
+        <constructor-arg index="0" value="vn"/>
+    </bean>
+    <!--通过类型赋值 不建议使用-->
+    <bean id="user1" class="com.zhang.pojo.User">
+        <constructor-arg type="java.lang.String" value="vn1"/>
+    </bean>
+    <!--通过参数名赋值-->
+    <bean id="user22" class="com.zhang.pojo.User">
+        <constructor-arg name="name" value="vn2"/>
+    </bean>
+    <!--
+        id:bean的唯一标识符,相当于我们学的对象名
+        class:bean 对象所对应的全限定名:包名+类型
+        name:也是别名,而且那么可以同时取多个别名
+    -->
+    <bean id="userT" class="com.zhang.pojo.UserT" name="t,userT2">
+        <property name="name" value="张"/>
+    </bean>
+    <!--别名，如果添加了别名，-->
+    <alias name="user" alias="qwer"/>
+
+
+
+</beans>

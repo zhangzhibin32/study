@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+               https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--使用Spring来创建对象，在Spring这些都成为Bean
+        类型 变量名=new 类型();
+        Hello hello=new Hello();
+
+        id=变量名
+        class=new 的对象
+        property相当于给对象中的属性设置一个值
+    -->
+    <bean id="mysql" class="com.zhang.dao.UserDaoMysqlImpl"/>
+    <bean id="oracle" class="com.zhang.dao.UserDaoOracleImpl"/>
+    <bean id="userService" class="com.zhang.service.UserServiceImpl">
+        <!--
+            ref:引用Spring容器中创建好的对象
+            value:具体的值-基本数据类型-->
+        <property name="userDao" ref="mysql"/>
+    </bean>
+
+
+
+
+</beans>
