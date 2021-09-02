@@ -7,7 +7,4 @@
 -@Nullable
     字段标记了这个注解，表明这个字段可以为Null
 -@Resource:自动装配通过名字，类型
--@Component:组件,放在类上，代表这个类被spring托管了。
--@Scope:作用域
--@Value:
-
+    
