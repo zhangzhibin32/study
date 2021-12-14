@@ -11,4 +11,5 @@ public class MyTest05 {
         people.getCat().shout();
         people.getDog().shout();
     }
+
 }

@@ -1,0 +1,9 @@
+第一章Object类
+java.lang.Object
+Object 是类层次结构的根类，所有对象(包括数组)都实现这个类的方法
+
+toString()
+clone()
+equals()
+finalize()
+getClass()

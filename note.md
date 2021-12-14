@@ -7,4 +7,8 @@
 -@Nullable
     字段标记了这个注解，表明这个字段可以为Null
 -@Resource:自动装配通过名字，类型
-    
+-@Component
+-@Value
+-@Configuration
+-@Bean
+
