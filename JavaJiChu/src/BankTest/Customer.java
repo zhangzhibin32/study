@@ -1,4 +1,4 @@
-package Bank;
+package BankTest;
 
 public class Customer {
 	private String name;
@@ -60,7 +60,15 @@ public class Customer {
 		this.email = email;
 	}
 
-	public String getDetails() {
-		return name + "\t" + gender + "\t" + age + "\t\t" + phone + "\t" + email;
+
+	@Override
+	public String toString() {
+		return "Customer{" +
+				"name='" + name + '\'' +
+				", gender=" + gender +
+				", age=" + age +
+				", phone='" + phone + '\'' +
+				", email='" + email + '\'' +
+				'}';
 	}
 }

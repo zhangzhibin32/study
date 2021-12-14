@@ -1,4 +1,4 @@
-﻿package Bank;
+package Bank;
 
 public class CustomerView {
 	private CustomerList customers = new CustomerList(10);

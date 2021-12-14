@@ -1,4 +1,5 @@
-package Bank;
+package BankTest;
+
 public class CustomerList {
     private Customer[] customers;
     private int total = 0;
