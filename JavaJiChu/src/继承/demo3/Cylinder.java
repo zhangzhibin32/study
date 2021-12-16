@@ -14,6 +14,12 @@ public class Cylinder extends Circle{
     public void setLength(Double length) {
         this.length = length;
     }
+
+    @Override
+    public Double findArea() {
+        return super.findArea();
+    }
+
     public Double findVolume(){
         return findArea()*length;
     }
