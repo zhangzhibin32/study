@@ -12,15 +12,15 @@
         property相当于给对象中的属性设置一个值
     -->
     <!--下标赋值-->
-    <bean id="user" class="com.zhang.pojo.User">
+    <bean id="user" class="com.zhang.pojo.com.zzb.OOP.Shape">
         <constructor-arg index="0" value="vn"/>
     </bean>
     <!--通过类型赋值 不建议使用-->
-    <bean id="user1" class="com.zhang.pojo.User">
+    <bean id="user1" class="com.zhang.pojo.com.zzb.OOP.Shape">
         <constructor-arg type="java.lang.String" value="vn1"/>
     </bean>
     <!--通过参数名赋值-->
-    <bean id="user2" class="com.zhang.pojo.User">
+    <bean id="user2" class="com.zhang.pojo.com.zzb.OOP.Shape">
         <constructor-arg name="name" value="vn2"/>
     </bean>
     <!--

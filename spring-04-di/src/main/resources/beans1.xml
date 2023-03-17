@@ -9,7 +9,7 @@
         <property name="address" value="南锣鼓巷"/>
     </bean>
     <!--p命名空间注入，可以直接注入属性的值：property-->
-    <bean id="user" class="com.zhang.pojo.User" p:name="张智滨" scope="prototype"/>
+    <bean id="user" class="com.zhang.pojo.com.zzb.OOP.Shape" p:name="张智滨" scope="prototype"/>
     <!--c命名空间注入，通过构造器注入：construct-args-->
-    <bean id="user2" class="com.zhang.pojo.User" c:name="张三"/>
+    <bean id="user2" class="com.zhang.pojo.com.zzb.OOP.Shape" c:name="张三"/>
 </beans>

@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Student.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #629755; font-style: italic;}
+.s3 { color: #629755; font-weight: bold; font-style: italic;}
+.s4 { color: #6a8759;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Student.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.zzb.OOP</span><span class="s0">;</span>
+
+<span class="s2">/**</span>
+ <span class="s2">* 这是一个学生类</span>
+ <span class="s2">* </span><span class="s3">@author </span><span class="s2">zzb</span>
+ <span class="s2">* </span><span class="s3">@version </span><span class="s2">1.0</span>
+ <span class="s2">*</span>
+ <span class="s2">*/</span>
+<span class="s0">public class </span><span class="s1">Student {</span>
+    <span class="s2">/**</span>
+     <span class="s2">* 学生姓名</span>
+     <span class="s2">*/</span>
+    <span class="s0">private </span><span class="s1">String name</span><span class="s0">;</span>
+    <span class="s2">/**</span>
+     <span class="s2">* 学生年龄</span>
+     <span class="s2">*/</span>
+    <span class="s0">private int </span><span class="s1">age</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">String gender</span><span class="s0">;</span>
+    <span class="s0">private double </span><span class="s1">mathScore</span><span class="s0">;</span>
+    <span class="s0">private double </span><span class="s1">englishScore</span><span class="s0">;</span>
+    <span class="s0">private double </span><span class="s1">chineseScore</span><span class="s0">;</span>
+
+    <span class="s0">static </span><span class="s1">{</span>
+        <span class="s1">System.out.println(</span><span class="s4">&quot;静态代码块执行&quot;</span><span class="s1">)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">Student() {</span>
+    <span class="s1">}</span>
+
+    <span class="s2">/**</span>
+     <span class="s2">*</span>
+     <span class="s2">* </span><span class="s3">@param </span><span class="s2">name</span>
+     <span class="s2">* 学生姓名</span>
+     <span class="s2">* </span><span class="s3">@param </span><span class="s2">age</span>
+     <span class="s2">* 学生年龄</span>
+     <span class="s2">* </span><span class="s3">@param </span><span class="s2">gender</span>
+     <span class="s2">* 学生性别</span>
+     <span class="s2">* </span><span class="s3">@param </span><span class="s2">mathScore</span>
+     <span class="s2">* 数学成绩</span>
+     <span class="s2">* </span><span class="s3">@param </span><span class="s2">englishScore</span>
+     <span class="s2">* 英语成绩</span>
+     <span class="s2">* </span><span class="s3">@param </span><span class="s2">chineseScore</span>
+     <span class="s2">* 语文成绩</span>
+     <span class="s2">*/</span>
+    <span class="s0">public </span><span class="s1">Student(String name</span><span class="s0">, int </span><span class="s1">age</span><span class="s0">, </span><span class="s1">String gender</span><span class="s0">, double </span><span class="s1">mathScore</span><span class="s0">, double </span><span class="s1">englishScore</span><span class="s0">, double </span><span class="s1">chineseScore) {</span>
+        <span class="s0">this</span><span class="s1">.name = name</span><span class="s0">;</span>
+        <span class="s0">this</span><span class="s1">.age = age</span><span class="s0">;</span>
+        <span class="s0">this</span><span class="s1">.gender = gender</span><span class="s0">;</span>
+        <span class="s0">this</span><span class="s1">.mathScore = mathScore</span><span class="s0">;</span>
+        <span class="s0">this</span><span class="s1">.englishScore = englishScore</span><span class="s0">;</span>
+        <span class="s0">this</span><span class="s1">.chineseScore = chineseScore</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s1">{</span>
+        <span class="s1">System.out.println(</span><span class="s4">&quot;构造代码块&quot;</span><span class="s1">)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">public void </span><span class="s1">show(){</span>
+        <span class="s1">System.out.println(</span><span class="s4">&quot;局部代码块&quot;</span><span class="s1">)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">public double </span><span class="s1">sumScore(){</span>
+        <span class="s0">return this</span><span class="s1">.chineseScore+</span><span class="s0">this</span><span class="s1">.mathScore+</span><span class="s0">this</span><span class="s1">.englishScore</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">public double </span><span class="s1">avg(){</span>
+        <span class="s0">return </span><span class="s1">sumScore()/</span><span class="s5">3</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">public </span><span class="s1">String toString() {</span>
+        <span class="s0">return </span><span class="s4">&quot;com.zzb.OOP.Student{&quot; </span><span class="s1">+</span>
+                <span class="s4">&quot;name='&quot; </span><span class="s1">+ name + </span><span class="s4">'</span><span class="s0">\'</span><span class="s4">' </span><span class="s1">+</span>
+                <span class="s4">&quot;, age=&quot; </span><span class="s1">+ age +</span>
+                <span class="s4">&quot;, gender='&quot; </span><span class="s1">+ gender + </span><span class="s4">'</span><span class="s0">\'</span><span class="s4">' </span><span class="s1">+</span>
+                <span class="s4">&quot;, mathScore=&quot; </span><span class="s1">+ mathScore +</span>
+                <span class="s4">&quot;, englishScore=&quot; </span><span class="s1">+ englishScore +</span>
+                <span class="s4">&quot;, chineseScore=&quot; </span><span class="s1">+ chineseScore +</span>
+                <span class="s4">'}'</span><span class="s0">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

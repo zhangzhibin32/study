@@ -18,5 +18,8 @@
         <module name="Until" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="面向对象上" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -6,7 +6,7 @@
     <bean id="address" class="com.zhang.pojo.Address">
         <property name="address" value="南锣鼓巷"/>
     </bean>
-    <bean id="student" class="com.zhang.pojo.Student">
+    <bean id="student" class="com.zhang.pojo.com.zzb.OOP.Student">
         <!--普通值注入-->
         <property name="name" value="张三"/>
         <!--bean注入-->
